@@ -210,3 +210,70 @@ body {
   font-size: 14px;
   line-height: 17px;
 }
+
+.cards-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bestseller__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card > img {
+  padding: 28px;
+  width: 246px;
+}
+
+.description {
+  color: #4b4b4b;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 261px;
+}
+
+.card__title {
+  font-family: "Readex Pro";
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.card__price {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.categories-container {
+  margin-top: 74px;
+}
+
+.categories__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 56px 13px 30px 13px;
+  height: 453px;
+  width: 413px;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding-top: 40px;
+}
+
+.categories__card > img {
+  height: 250px;
+  margin-top: 30px;
+}
