@@ -13,12 +13,13 @@ body {
   font-family: Inter;
 }
 
-.header__wrapper {
+.header {
   height: 80px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .header__logo {
@@ -256,7 +257,7 @@ body {
   line-height: 22px;
 }
 
-.categories-container {
+.categories {
   margin-top: 74px;
 }
 
@@ -285,8 +286,8 @@ body {
   justify-content: center;
 }
 
-.about__description{
-  display: flex;  
+.about__description {
+  display: flex;
   margin-top: 56px;
 }
 
@@ -306,37 +307,37 @@ body {
 }
 
 .search__input {
-  background: #F8F9FA;
-  border: 1px solid #C5C5C5;
-border-radius: 100px;
-height: 60px;
-width: 650px;
-padding-left:20px;
-margin-bottom:28px;
-margin-top: 30px;
+  background: #f8f9fa;
+  border: 1px solid #c5c5c5;
+  border-radius: 100px;
+  height: 60px;
+  width: 650px;
+  padding-left: 20px;
+  margin-bottom: 28px;
+  margin-top: 30px;
 }
 
 .search {
-  margin-top: 76px;;
+  margin-top: 76px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .search__prompt {
-padding: 12px 22px;
-display: inline;
-background: #FFFFFF;
-border: 1px solid #C5C5C5;
-border-radius: 200px;
-font-size: 14px;
+  padding: 12px 22px;
+  display: inline;
+  background: #ffffff;
+  border: 1px solid #c5c5c5;
+  border-radius: 200px;
+  font-size: 14px;
 }
 
-
-.prompts1 {
+.search__prompts1 {
   margin-bottom: 34px;
 }
 
 .search__prompt:hover {
+  cursor: pointer;
   background: #ededed;
 }
 
@@ -348,33 +349,33 @@ font-size: 14px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #DCE5E2;
+  background-color: #dce5e2;
   border-radius: 16px;
 }
 
 .subscribe > img {
-margin-top: 14px;
-height: 200px;
+  margin-top: 14px;
+  height: 200px;
 }
 
 .subscribe__input {
   padding: 16px 32px;
   width: 284px;
-  background: #DCE5E2;
-border: 1px solid #000000;
-border-radius: 54px 0px 0px 54px;
+  background: #dce5e2;
+  border: 1px solid #000000;
+  border-radius: 54px 0px 0px 54px;
 }
 
 .subscribeBtn {
   background: #000000;
-border-radius: 0px 200px 200px 0px;
-padding: 17px 32px;
-border: none;
-color: white;
+  border-radius: 0px 200px 200px 0px;
+  padding: 17px 32px;
+  border: none;
+  color: white;
 }
 
 .subscribe__form {
-  margin-top: 14px;;
+  margin-top: 14px;
   display: flex;
 }
 
@@ -403,7 +404,8 @@ color: white;
   padding: 0 42px;
 }
 
-.promocards__card3 {
+.promocards__card3,
+.promocards__card4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,8 +421,8 @@ color: white;
   margin: 42px 0 42px 0;
 }
 
-.promocards__title{
-  font-family: 'Readex Pro';
+.promocards__title {
+  font-family: "Readex Pro";
   font-size: 32px;
   margin: 0 30px 0 30px;
 }

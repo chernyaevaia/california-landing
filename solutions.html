@@ -11,84 +11,93 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <header class="header">
-      <a href="/">
-        <img src="./img/logo.svg" alt="Shop Logo" class="header__logo" />
-      </a>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="index.html" class="header__link">All products</a>
-          </li>
-          <li class="header__item">
-            <a href="solutions.html" class="header__link">Solutions</a>
-          </li>
-          <li class="header__item">
-            <a href="about.html" class="header__link">About</a>
-          </li>
-          <li class="header__item">
-            <a href="#!" class="header__link">Support</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__icons">
-        <img src="./img/cart-icon.svg" alt="your cart" />
-        <img src="./img/search-icon.svg" alt="search" />
-      </div>
+    <a href="/">
+      <img src="./img/logo.svg" alt="Shop Logo" class="header__logo" />
+    </a>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="index.html" class="header__link">All products</a>
+        </li>
+        <li class="header__item">
+          <a href="solutions.html" class="header__link">Solutions</a>
+        </li>
+        <li class="header__item">
+          <a href="about.html" class="header__link">About</a>
+        </li>
+        <li class="header__item">
+          <a href="#!" class="header__link">Support</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__icons">
+      <img src="./img/cart-icon.svg" alt="your cart" />
+      <img src="./img/search-icon.svg" alt="search" />
+    </div>
   </header>
-
   <main class="content-wrapper">
-    <div class="promo">
-      <img src="./img/arrowLeft.svg" class="" alt="">
-      <div class="promo__text">
-        <h2 class="promo__headline">The new phones are <br> here take a look.</h2>
-        <div class="promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est <br>
-          dui, aliquam, tempor. Faucibus morbi turpis.</div>
-        <button class="exploreBtn">Explore</button>
+    <div class="bestseller__text">
+      <h2 class="headline">Save on our most selled items</h2>
+      <div class="subtitle">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</div>
+    </div>
+    <div class="cards-container">
+      <div class="card">
+        <img src="./img/mac13.svg" alt="">
+        <div class="card__title">MacBook Pro 13</div>
+        <div class=" description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</div>
+        <div class="card__price">$ 1,200.00 USD</div>
       </div>
-      <img class="promo__image" src="./img/promo-phones.png" alt="promo smartphones image">
-      <img src="./img/arrowRight.svg" class="" alt="">
-      <div class="carousel">
-        <div class="carousel__line"></div>
-        <div class="carousel__line"></div>
-        <div class="carousel__line"></div>
+      <div class="card">
+        <img src="./img/watch.svg" alt="">
+        <div class="card__title">MacBook Pro 13</div>
+        <div class=" description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit...</div>
+        <div class="card__price">$ 1,200.00 USD</div>
+      </div>
+      <div class="card">
+        <img src="./img/macm1.svg" alt="">
+        <div class="card__title">MacBook Pro 13</div>
+        <div class=" description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                velit...</div>
+        <div class="card__price">$ 1,200.00 USD</div>
+      </div>
+      <div class="card">
+        <img src="./img/tablet.svg" alt="">
+        <div class="card__title">MacBook Pro 13</div>
+        <div class="description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+          adipisci velit...</div>
+        <div class="card__price">$ 1,200.00 USD</div>
       </div>
     </div>
     <div class="categories">
       <div class="categories__text">
-        <h2 class="headline">Shop our latest offers and categories</h2>
-        <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam,
-          <br> tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <h2 class="headline">See the best around here</h2>
+        <div class="subtitle">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</div>
       </div>
-      <div class="promocards">
-        <div class="promocards__block1">
-      <div class="promocards__card1">
-        <img src="./img/laptoppromo.svg" alt="">
-        <div class="description">Laptops</div>
-        <h3 class="promocards__title">True Laptop Solution</h3>
+      <div class="cards-container">
+        <div class="categories__card">
+          <div class="description">Smart light bulb pack</div>
+          <div class="card__title">Latest and greatest</div>
+          <button class="exploreBtn">Explore</button>
+          <img src="./img/two-watches.svg" alt="image with two watches">
+        </div>
+        <div class="categories__card">
+          <div class="description">Smart light bulb pack</div>
+          <div class="card__title">Best selling</div>
+          <button class="exploreBtn">Explore</button>
+          <img src="./img/bestselling-card.svg" alt="image with a laptop and smartphones">
+        </div>
+        <div class="categories__card">
+          <div class="description">Smart light bulb pack</div>
+          <div class="card__title">Every product</div>
+          <button class="exploreBtn">Explore</button>
+          <img src="./img/everyproduct-card.svg" alt="image with a laptop and a phone">
+        </div>
       </div>
-      <div class="promocards__card2">
-        <img src="./img/watchpromo.svg" alt="">
-        <div class="description">Watch</div>
-        <h3 class="promocards__title">Not just stylish</h3>
-      </div>
-    </div>
-      <div class="promocards__card4">
-        <img src="./img/phonepromo.svg" alt="">
-      <div class="description">Phones</div>
-      <h3 class="promocards__title">Your day to day life</h3></div>
-      <div class="promocards__card3">
-        <div class="description">Tablet</div>
-        <h3 class="promocards__title">Empower your work</h3>
-        <img src="./img/tabletpromo.svg" alt="">
-      </div>
-    </div>
-    </div>
     </div>
   </main>
-
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="logo__wrapper">
@@ -98,7 +107,6 @@
           our best offers on the perfect gifts.
         </div>
       </div>
-
       <nav class="footer__nav">
         <ul>
           <li class="footer__item">
@@ -176,5 +184,4 @@
     </div>
   </footer>
 </body>
-
 </html>
