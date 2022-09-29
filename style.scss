@@ -79,15 +79,47 @@ body {
   }
 }
 
+select {
+  border: none;
+}
+
 .content-wrapper {
   padding: 0 74px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 ///
 /// MAIN: PROMO
 ///
 
-.promo {
+.carousel {
   @include flex-align-center;
   height: 550px;
   padding: 0 20px;
@@ -96,20 +128,44 @@ body {
   border-radius: 32px;
 }
 
-.promo__icon:hover {
+.carousel__track-container {
+  height: 550px;
+  width: 1290px;
+}
+
+.carousel__track {
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.carousel__track[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel__slide {
+  display: flex;
+  align-items: center;
+}
+
+.carousel__button-left:hover,
+.carousel__button-right:hover {
   cursor: pointer;
 }
 
-.promo__image {
+.carousel__image {
   height: 530px;
   width: 607px;
 }
 
-.promo__text {
+.carousel__text {
   margin-left: 36px;
 }
 
-.promo__headline {
+.carousel__headline {
   font-family: Readex Pro;
   font-size: 58px;
   margin-bottom: 20px;
@@ -129,17 +185,21 @@ body {
   }
 }
 
-.carousel {
+.carousel__nav {
   display: flex;
   position: absolute;
   margin: 500px 0 0 270px;
 }
 
-.carousel__line {
+.carousel__indicator {
   height: 2px;
   width: 194px;
   margin-right: 34px;
   background-color: black;
+  &:hover {
+    cursor: pointer;
+    background-color: $color4;
+  }
 }
 
 .categories {
@@ -164,6 +224,10 @@ body {
   box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
   padding: 0 42px;
   text-align: end;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 35px rgba(4, 133, 193, 0.25);
+  }
 }
 
 .promocards__card2 {
@@ -173,6 +237,10 @@ body {
   padding: 0 42px;
   text-align: end;
   box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 35px rgba(4, 133, 193, 0.25);
+  }
 }
 
 .promocards__card3 {
@@ -188,6 +256,10 @@ body {
   text-align: center;
   margin-left: 16px;
   box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 35px rgba(4, 133, 193, 0.25);
+  }
   img {
     margin: 42px 0 42px 0;
   }

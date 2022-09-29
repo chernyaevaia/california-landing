@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CALIFORNIA</title>
   <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap" rel="stylesheet" />
@@ -22,8 +23,16 @@
           <a href="index.html" class="header__link">All products</a>
         </li>
         <li class="header__item">
-          <a href="solutions.html" class="header__link">Solutions</a>
-          <img src="./img/arrow-down.svg" alt="arrow show options">
+          <div class="dropdown">
+            <div class="dropbtn"><a href="solutions.html" class="header__link">Solutions</a>  
+            <img src="./img/arrow-down.svg" alt="arrow show options">
+          </div>
+            <div class="dropdown-content">
+              <a href="#">Solution 1</a>
+              <a href="#">Solution 2</a>
+              <a href="#">Solution 3</a>
+            </div>
+          </div>
         </li>
         <li class="header__item">
           <a href="about.html" class="header__link">About</a>
