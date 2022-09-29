@@ -79,10 +79,6 @@ body {
   }
 }
 
-select {
-  border: none;
-}
-
 .content-wrapper {
   padding: 0 74px;
 }
@@ -129,35 +125,51 @@ select {
 }
 
 .carousel__track-container {
+  display: flex;
   height: 550px;
   width: 1290px;
-}
-
-.carousel__track {
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-}
-
-.carousel__track[data-active] {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0ms;
+  overflow: hidden;
 }
 
 .carousel__slide {
+  position: absolute;
+  margin: 110px 72px 0 72px;
+  height: 550px;
+  width: 1290px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  inset: 0;
+  opacity: 0;
 }
 
-.carousel__button-left:hover,
-.carousel__button-right:hover {
-  cursor: pointer;
+.carousel__slide[data-active] {
+  position: absolute;
+  margin: 110px 72px 0 72px;
+  height: 550px;
+  width: 1290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 1;
+  transition: 200ms;
+  transition-delay: 0ms;
+}
+
+.carousel__button-left, .carousel__button-right {
+  z-index: 3;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.carousel__nav {
+  z-index: 3;
 }
 
 .carousel__image {
-  height: 530px;
+  height: 100%;
   width: 607px;
 }
 
